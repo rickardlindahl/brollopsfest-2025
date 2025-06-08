@@ -1,16 +1,82 @@
 ---
-
+import './src/styles/global.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vår Bröllopsfest! - [Era Namn]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+<body class="font-body antialiased bg-primary-100 text-primary-900">
+
+    <header class="bg-primary-200 text-primary-900 p-8 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="font-heading text-5xl md:text-6xl font-extrabold mb-4">Vi gifter oss!</h1>
+            <p class="font-heading text-2xl md:text-3xl font-light">Och vill fira med er!</p>
+            <p class="text-xl mt-2 font-body">[Ditt Namn] & [Din Partners Namn]</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-12">
+        <section id="datum-plats" class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="font-heading text-4xl font-bold text-center text-primary-800 mb-6">När & Var</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                <div>
+                    <h3 class="font-heading text-3xl font-semibold text-primary-700 mb-3">Datum</h3>
+                    <p class="text-2xl font-body">[Datum, t.ex. Lördag 23 Augusti 2025]</p>
+                    <p class="text-xl font-body">[Tid, t.ex. kl. 18:00]</p>
+                </div>
+                <div>
+                    <h3 class="font-heading text-3xl font-semibold text-primary-700 mb-3">Plats</h3>
+                    <p class="text-2xl font-body">[Platsnamn, t.ex. Restaurang Stadshuset]</p>
+                    <p class="text-xl font-body">[Adress, t.ex. Storgatan 1, 903 26 Umeå]</p>
+                    <a href="[Länk till Google Maps eller liknande]" target="_blank" class="text-accent-velvet hover:underline mt-2 inline-block font-body">Visa på karta</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="detaljer" class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="font-heading text-4xl font-bold text-center text-primary-800 mb-6">Mer information</h2>
+            <div class="prose max-w-none text-lg text-primary-700 mx-auto font-body">
+                <p class="mb-4">
+                    Vi är så glada att äntligen få fira vår kärlek med er! Efter vigseln ser vi fram emot en festlig kväll med god mat, dryck och härligt sällskap.
+                </p>
+                <p class="mb-4">
+                    Vi önskar oss inga presenter, men om ni vill uppmärksamma oss på något sätt, uppskattar vi ett bidrag till vår bröllopsresa. Mer information om detta kommer senare.
+                </p>
+                <p>
+                    Klädkod: [Föreslagen klädkod, t.ex. Kavaj eller Valfri]
+                </p>
+                <h3 class="font-heading text-2xl font-semibold text-primary-700 mt-6 mb-3">O.S.A. (Om svar anhålles)</h3>
+                <p class="mb-4">
+                    Vi ber er svara senast den [Datum för O.S.A., t.ex. 1 Augusti 2025] så att vi kan planera festen på bästa sätt.
+                </p>
+                <p class="mb-4">
+                    Vänligen svara till: <a href="mailto:er.email@example.com" class="text-accent-velvet hover:underline font-body">er.email@example.com</a> eller via formuläret nedan.
+                </p>
+            </div>
+        </section>
+
+        <section id="kontakta-oss" class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="font-heading text-4xl font-bold text-center text-primary-800 mb-6">Kontakta oss</h2>
+            <div class="text-center text-lg text-primary-700 font-body">
+                <p class="mb-2">Har ni några frågor? Tveka inte att höra av er!</p>
+                <p>
+                    <span class="font-semibold">[Ditt Namn]:</span> <a href="tel:[Ditt Telefonnummer]" class="text-accent-velvet hover:underline">[Ditt Telefonnummer]</a><br>
+                    <span class="font-semibold">[Din Partners Namn]:</span> <a href="tel:[Din Partners Telefonnummer]" class="text-accent-velvet hover:underline">[Din Partners Telefonnummer]</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-900 text-primary-50 p-6 text-center mt-8 font-body">
+        <p>&copy; [År, t.ex. 2025] [Era Namn]. Alla rättigheter reserverade.</p>
+    </footer>
+
+</body>
 </html>
